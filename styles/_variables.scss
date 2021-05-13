@@ -1,0 +1,19 @@
+$primary-color: #242f51;
+$yellow: #fcae61;
+$text-color: #616368;
+$border-color: #e2eaed;
+
+$light-pink-color: #ffecef;
+$magenta: #f55767;
+
+$lignt-blue-color: #f4f4ff;
+$blue: #2563ff;
+
+$lignt-green-color: #e4ffee;
+$green: #40975f;
+
+$button-color: #2500f9;
+
+@mixin transition-ease {
+    transition: all .3s ease-in-out;
+}
