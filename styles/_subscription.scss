@@ -15,4 +15,180 @@
             padding-bottom: 20px;
         }
     }
+
+    &-toggle-switch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        span.switcher {
+            position: relative;
+
+            width: 200px;
+            height: 50px;
+            border-radius: 25px;
+            margin: 20px 0;
+
+            input {
+                appearance: none;
+
+                position: relative;
+
+                width: 200px;
+                height: 50px;
+                border-radius: 25px;
+
+                background-color: $black;
+                outline: none;
+                font-weight: 700;
+
+                &:before,
+                &:after {
+                    z-index: 2;
+
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    color: $white;
+                }
+
+                &:before {
+                    content: 'Monthly';
+                    left: 25px;
+                }
+
+                &:after {
+                    content: 'Annually';
+                    right: 25px;
+                }
+            }
+
+            label {
+                z-index: 1;
+                position: absolute;
+                top: 10px;
+                bottom: 10px;
+
+                border-radius: 20px;
+            }
+
+            &.switcher-1 {
+                input {
+                    transition: .25s -.1s;
+
+                    &:checked {
+                        background-color: $white;
+
+                        &:before {
+                            color: $white;
+                            transition: color .5s .2s;
+                        }
+
+                        &:after {
+                            color: $grey;
+                            transition: color .5s;
+                        }
+
+                        &+label {
+                            left: 10px;
+                            right: 100px;
+
+                            background: $blue;
+
+                            transition: left .5s, right .4s .2s;
+                        }
+                    }
+
+                    &:not(:checked) {
+                        background: $white;
+                        transition: background .5s -.1s;
+
+                        &:before {
+                            color: $grey;
+                            transition: color .5s;
+                        }
+
+                        &:after {
+                            color: $white;
+                            transition: color .5s .2s;
+                        }
+
+                        &+label {
+                            left: 100px;
+                            right: 10px;
+
+                            background: $blue;
+
+                            transition: left .4s .2s, right .5s, background .35s -.1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-boxes {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        .subscription-box {
+            margin: 0 20px;
+            .wrapper {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                flex-flow: column;
+                background: linear-gradient(#fff, #f4f7f9);
+                width: 317px;
+                height: 234px;
+
+                .subscription-cost {
+                    display: flex;
+                    padding-top: 70px;
+                    padding-bottom: 20px;
+
+                    span {
+                        color: $primary-color;
+                        font-size: 60px;
+                        line-height: 58px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        transform: translateY(50%);
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+
+                .subscription-title {
+                    h3 {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            .subscription-benefits {
+                padding-top: 20px;
+
+                ul li {
+                    color: $list-color;
+                    font-size: 16px;
+                    line-height: 48px;
+                    font-weight: 400;
+                }
+            }
+
+            .button-1 {
+                padding-top: 40px;
+                margin-bottom: 40px;
+            }
+
+        }
+    }
 }

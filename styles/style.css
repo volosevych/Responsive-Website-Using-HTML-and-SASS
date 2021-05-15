@@ -644,6 +644,202 @@
   padding-bottom: 20px;
 }
 
+.subscription-toggle-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscription-toggle-switch span.switcher {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 20px 0;
+}
+
+.subscription-toggle-switch span.switcher input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #1E1E1E;
+  outline: none;
+  font-weight: 700;
+}
+
+.subscription-toggle-switch span.switcher input:before, .subscription-toggle-switch span.switcher input:after {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #FFFFFF;
+}
+
+.subscription-toggle-switch span.switcher input:before {
+  content: 'Monthly';
+  left: 25px;
+}
+
+.subscription-toggle-switch span.switcher input:after {
+  content: 'Annually';
+  right: 25px;
+}
+
+.subscription-toggle-switch span.switcher label {
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  border-radius: 20px;
+}
+
+.subscription-toggle-switch span.switcher.switcher-1 input {
+  -webkit-transition: .25s -.1s;
+  transition: .25s -.1s;
+}
+
+.subscription-toggle-switch span.switcher.switcher-1 input:checked {
+  background-color: #FFFFFF;
+}
+
+.subscription-toggle-switch span.switcher.switcher-1 input:checked:before {
+  color: #FFFFFF;
+  -webkit-transition: color .5s .2s;
+  transition: color .5s .2s;
+}
+
+.subscription-toggle-switch span.switcher.switcher-1 input:checked:after {
+  color: #CCCCCC;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.subscription-toggle-switch span.switcher.switcher-1 input:checked + label {
+  left: 10px;
+  right: 100px;
+  background: #2563ff;
+  -webkit-transition: left .5s, right .4s .2s;
+  transition: left .5s, right .4s .2s;
+}
+
+.subscription-toggle-switch span.switcher.switcher-1 input:not(:checked) {
+  background: #FFFFFF;
+  -webkit-transition: background .5s -.1s;
+  transition: background .5s -.1s;
+}
+
+.subscription-toggle-switch span.switcher.switcher-1 input:not(:checked):before {
+  color: #CCCCCC;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.subscription-toggle-switch span.switcher.switcher-1 input:not(:checked):after {
+  color: #FFFFFF;
+  -webkit-transition: color .5s .2s;
+  transition: color .5s .2s;
+}
+
+.subscription-toggle-switch span.switcher.switcher-1 input:not(:checked) + label {
+  left: 100px;
+  right: 10px;
+  background: #2563ff;
+  -webkit-transition: left .4s .2s, right .5s, background .35s -.1s;
+  transition: left .4s .2s, right .5s, background .35s -.1s;
+}
+
+.subscription-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscription-boxes .subscription-box {
+  margin: 0 20px;
+}
+
+.subscription-boxes .subscription-box .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f7f9));
+  background: linear-gradient(#fff, #f4f7f9);
+  width: 317px;
+  height: 234px;
+}
+
+.subscription-boxes .subscription-box .wrapper .subscription-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.subscription-boxes .subscription-box .wrapper .subscription-cost span {
+  color: #242f51;
+  font-size: 60px;
+  line-height: 58px;
+  font-weight: 600;
+}
+
+.subscription-boxes .subscription-box .wrapper .subscription-cost p {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.subscription-boxes .subscription-box .wrapper .subscription-title h3 {
+  color: #242f51;
+}
+
+.subscription-boxes .subscription-box .subscription-benefits {
+  padding-top: 20px;
+}
+
+.subscription-boxes .subscription-box .subscription-benefits ul li {
+  color: #999ca5;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.subscription-boxes .subscription-box .button-1 {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
 @-webkit-keyframes shadow-pop-tr {
   0% {
     -webkit-box-shadow: 0 0 #2563ff, 0 0 #2563ff, 0 0 #2563ff, 0 0 #2563ff, 0 0 #2563ff, 0 0 #2563ff, 0 0 #2563ff, 0 0 #2563ff;

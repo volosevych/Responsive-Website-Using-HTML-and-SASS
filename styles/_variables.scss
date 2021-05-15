@@ -3,6 +3,10 @@ $yellow: #fcae61;
 $text-color: #616368;
 $border-color: #e2eaed;
 
+$black:#1E1E1E;
+$grey:#CCCCCC;
+$white:#FFFFFF;
+
 $light-pink-color: #ffecef;
 $magenta: #f55767;
 
@@ -13,6 +17,8 @@ $light-green-color: #e4ffee;
 $green: #40975f;
 
 $button-color: #2500f9;
+
+$list-color: #999ca5;
 
 @mixin transition-ease {
     transition: all .3s ease-in-out;
