@@ -1,0 +1,18 @@
+.subscription {
+    padding-top: 160px;
+
+    &-intro {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-flow: column;
+
+        h1 {
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: 600;
+            color: $primary-color;
+            padding-bottom: 20px;
+        }
+    }
+}

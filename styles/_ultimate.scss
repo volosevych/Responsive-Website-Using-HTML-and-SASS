@@ -1,0 +1,64 @@
+.ultimate {
+    padding-top: 160px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+    .ultimate-content {
+        h1 {
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: 600;
+            color: $primary-color;
+            padding-bottom: 20px;
+        }
+
+        p {
+            padding-bottom: 55px;
+        }
+
+        &__boxes {
+            display: flex;
+            width: 620px;
+            flex-wrap: wrap;
+
+            .ultimate-content__box {
+                padding-right: 40px;
+
+                img {
+                    max-width: 100%;
+                }
+
+                .ultimate-img {
+                    background-color: $light-blue-color;
+                    @include feature-box;
+                }
+
+                h2 {
+                    color: $primary-color;
+                    font-size: 20px;
+                    line-height: 58px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .ultimate-images {
+        position: relative;
+
+        .ultimate-image-1 {
+            position: absolute;
+            top: 10%;
+            right: 0;
+            z-index: 100;
+        }
+
+        .ultimate-image-2 {
+            position: absolute;
+            top: 10%;
+            right: 200px;
+        }
+    }
+}
+}

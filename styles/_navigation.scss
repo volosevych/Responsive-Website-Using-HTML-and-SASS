@@ -1,13 +1,11 @@
 .nav {
     display: flex;
-    position: fixed;
+    justify-content: space-between;
     padding: 2% 6%;
 
     .nav-logo {
         color: $yellow;
         font-size: 26px;
-        position: fixed;
-        left: 200px;
 
         span {
             color: $primary-color;
@@ -15,8 +13,7 @@
     }
 
     .nav-links {
-        position: fixed;
-        right: 200px;
+        
         ul li {
             list-style: none;
             display: inline-block;

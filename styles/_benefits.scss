@@ -1,0 +1,66 @@
+.benefits {
+    padding-top: 160px;
+
+    &-boxes {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 31%;
+
+        .benefit-box {
+            width: 330px;
+            padding-right: 30px;
+
+            img {
+                max-width: 100%;
+                width: 58px;
+                height: 58px;
+            }
+
+            .bill-img {
+                background-color: $light-pink-color;
+                @include feature-box;
+            }
+
+            .network-img {
+                background-color: $light-blue-color;
+                @include feature-box;
+            }
+
+            .thumbup-img {
+                background-color: $light-green-color;
+                @include feature-box;
+            }
+
+            h2 {
+                padding-top: 15px;
+            }
+
+            .bill-title {
+                color: $magenta;
+                font-size: 20px;
+                line-height: 58px;
+                font-weight: 600;
+            }
+
+            .network-title {
+                color: $blue;
+                font-size: 20px;
+                line-height: 58px;
+                font-weight: 600;
+            }
+
+            .thumbup-title {
+                color: $green;
+                font-size: 20px;
+                line-height: 58px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 400;
+            }
+        }
+    }
+}

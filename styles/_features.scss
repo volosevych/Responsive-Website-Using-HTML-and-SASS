@@ -1,0 +1,90 @@
+.features {
+    padding-top: 160px;
+    &-content {
+        display: flex;
+        justify-content: space-between;
+
+        &__image {
+            float: left;
+            max-width: 100%;
+        }
+
+        &__items {
+            float: left;
+
+            h1 {
+                color: $primary-color;
+                font-size: 36px;
+                line-height: 46px;
+                font-weight: 600;
+
+                padding-bottom: 30px;
+            }
+
+            p {
+                color: $text-color;
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 400;
+            }
+
+            .feature-boxes {
+                padding-top: 90px;
+
+                .feature-box {
+                    display: flex;
+                    padding-bottom: 60px;
+
+                    img {
+                        max-width: 100%;
+                        width: 58px;
+                        height: 54px;
+                    }
+
+                    .speed-img {
+                        background-color: $light-pink-color;
+                        @include feature-box;
+                    }
+
+                    .prototyping-img {
+                        background-color: $light-blue-color;
+                        @include feature-box;
+                    }
+
+                    .vector-img {
+                        background-color: $light-green-color;
+                        @include feature-box;
+                    }
+
+                    .speed-title {
+                        color: $magenta;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .prototyping-title {
+                        color: $blue;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .vector-title {
+                        color: $green;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        padding-top: 16px;
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-weight: 400;
+                        color: $text-color;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}

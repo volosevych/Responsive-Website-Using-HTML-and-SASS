@@ -1,0 +1,19 @@
+.companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        color: $primary-color;
+        padding-top: 110px;
+        padding-bottom: 40px;
+    }
+
+    .companies-logos {
+        img {
+            max-width: 100%;
+            margin: 0 40px;
+        }
+    }
+}

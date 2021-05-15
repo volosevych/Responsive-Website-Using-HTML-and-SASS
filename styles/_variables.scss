@@ -6,14 +6,21 @@ $border-color: #e2eaed;
 $light-pink-color: #ffecef;
 $magenta: #f55767;
 
-$lignt-blue-color: #f4f4ff;
+$light-blue-color: #f4f4ff;
 $blue: #2563ff;
 
-$lignt-green-color: #e4ffee;
+$light-green-color: #e4ffee;
 $green: #40975f;
 
 $button-color: #2500f9;
 
 @mixin transition-ease {
     transition: all .3s ease-in-out;
+}
+
+@mixin feature-box {
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin-right: 30px;
 }

@@ -1,0 +1,28 @@
+.designed {
+    padding-top: 160px;
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .designed-text {
+            width: 410px;
+            position: absolute;
+            top: 20%;
+            right: 0;
+
+            h1 {
+                font-size: 36px;
+                line-height: 46px;
+                font-weight: 600;
+                color: $primary-color;
+                padding-bottom: 30px;
+            }
+
+            p {
+                padding-bottom: 60px;
+            }
+        }
+    }
+}
