@@ -1,0 +1,36 @@
+.download {
+    padding-top: 160px;
+
+    &-intro {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: column;
+
+        h1 {
+            font-size: 48px;
+            line-height: 58px;
+            font-weight: 600;
+            color: $primary-color;
+            padding-bottom: 20px;
+        }
+
+        .download-buttons {
+            padding-top: 50px;
+
+            a:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .download-image {
+        position: relative;
+
+        img {
+            max-width: 100%;
+            position: absolute;
+            right: -350px;
+            top: -300px;
+        }
+    }
+}

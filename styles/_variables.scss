@@ -1,4 +1,5 @@
 $primary-color: #242f51;
+$footer-background: #09142e;
 $yellow: #fcae61;
 $text-color: #616368;
 $border-color: #e2eaed;
@@ -19,6 +20,9 @@ $green: #40975f;
 $button-color: #2500f9;
 
 $list-color: #999ca5;
+$arrow-background: #eff3f8;
+$star-color: #ffcc00;
+$accordion-background: #f5f7fa;
 
 @mixin transition-ease {
     transition: all .3s ease-in-out;

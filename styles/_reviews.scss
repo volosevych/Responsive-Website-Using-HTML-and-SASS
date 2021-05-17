@@ -1,0 +1,140 @@
+.reviews {
+    padding-top: 160px;
+
+    &-left {
+        position: relative;
+
+        .world-map {
+            max-width: 100%;
+            float: left;
+        }
+        .review-photo {
+            position: absolute;
+            max-width: 100%;
+        }
+
+        .photo-1 {
+            position: absolute;
+            left: 70px;
+            top: 240px;
+        }
+
+        .photo-2 {
+            position: absolute;
+            top: 250px;
+            left: 26%;
+        }
+
+        .photo-3 {
+            position: absolute;
+            top: 30px;
+            left: 630px;
+        }
+
+        .photo-4 {
+            position: absolute;
+            top: 350px;
+            left: 250px;
+        }
+
+        .photo-5 {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+        }
+
+        .photo-6 {
+            position: absolute;
+            top: 150px;
+            left: 300px;
+        }
+
+        .photo-7 {
+            position: absolute;
+            top: 0px;
+            left: 280px;
+        }
+    }
+
+    &-right {
+
+        h1 {
+            color: $primary-color;
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: 600;
+            padding-bottom: 15px;
+        }
+
+        .reviews-slider {
+            position: relative;
+            width: 90%;
+            .prev-arrow {
+                position: absolute;
+                bottom: 15px;
+                right: 25%;
+                background: $arrow-background;
+                color: $button-color;
+                font-size: 22px;
+                padding: 18px 18px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .next-arrow {
+                position: absolute;
+                bottom: 15px;
+                right: 20%;
+                background: $arrow-background;
+                color: $button-color;
+                font-size: 22px;
+                padding: 18px 18px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .reviews-slider-item {
+                padding-top: 30px;
+
+                .review-stars {
+                    display: flex;
+
+                    i {
+                        color: $star-color;
+                        font-size: 20px;
+                        line-height: 58px;
+                        margin-right: 4px;
+                    }
+                }
+
+                h2 {
+                    color: $primary-color;
+                    font-size: 20px;
+                    line-height: 58px;
+                    font-weight: 600;
+                }
+
+                p {
+                    width: 560px;
+                }
+
+                .reviews-author {
+                    display: flex;
+                    padding-top: 60px;
+
+                    img {
+                        margin-right: 30px;
+                    }
+
+                    .reviews-author-name {
+                            
+                        h2 {
+                            line-height: 30px;
+                            padding-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
