@@ -1,4 +1,5 @@
 @import './variables';
+@import './media-queries';
 @import './navigation';
 @import './home';
 @import './companies';
@@ -48,6 +49,7 @@
 }
 
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -128,3 +130,5 @@ p {
         color: $text-color;
     }
 }
+
+// media

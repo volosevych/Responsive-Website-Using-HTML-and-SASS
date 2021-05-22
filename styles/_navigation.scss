@@ -1,78 +1,65 @@
-.nav {
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    height: 100px;
     display: flex;
     justify-content: space-between;
-    padding: 2% 6%;
+    padding: 0.5rem calc((100vw - 1200px) /2); 
+    z-index: 10;
+    position: relative;
 
-    .nav-logo {
+    &__logo {
         color: $yellow;
-        font-size: 26px;
+        font-size: 30px;
+        line-height: 44px;
+        font-weight: 700;
+        @extend %align-center;
 
         span {
             color: $primary-color;
         }
     }
 
-    .nav-links {
-        
-        ul li {
-            list-style: none;
-            display: inline-block;
-            position: relative;
-            margin: 0 20px;
+    &__bars {
+        opacity: 0;
 
-            .link {
-                color: $primary-color;
-                font-size: 16px;
-
-                &::after {
-                    content: "";
-                    background: $primary-color;
-                    opacity: 0.2;
-                    width: calc(100% + 20px);
-                    height: 0;
-                    position: absolute;
-                    bottom: -4px;
-                    left: -10px;
-                    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-                }
-
-                &:hover::after {
-                    height: calc(100% + 8px);
-                }
-            }
+        @include tablet {
+            color: $black;
+            opacity: 1;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            font-size: 1.5rem;
         }
     }
 
-    .menu-nav {
-        display: flex;
-        float: right;
+    &__menu {
+        @extend %align-center;
+        text-align: center;
 
-        &__item {
-            margin: 0 30px;
+        &--links {
+            color: $primary-color;
+            margin: 0 15px;
+            font-size: 16px;
+            @extend %align-center;
+            justify-content: center;
 
-            .menu-nav__link {
-                display: block;
-                position: relative;
-                color: $primary-color;
-                font-size: 16px;
-
-                &::after {
-                    content: "";
-                    background: $primary-color;
-                    opacity: 0.2;
-                    width: calc(100% + 20px);
-                    height: 0;
-                    position: absolute;
-                    bottom: -4px;
-                    left: -10px;
-                    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-                }
-
-                &:hover::after {
-                    height: calc(100% + 8px);
-                }
-
+            &:hover {
+                color: $yellow;
+                @include transition-ease;
             }
+        }
+
+        .button-1 {
+            margin-left: 10px;
+        }
+        
+
+        @include tablet {
+            display: none;
         }
     }
 }
